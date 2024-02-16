@@ -1,8 +1,4 @@
-// src/lib.rs
-
-pub enum Expr {
-    Number(f64),
-    Symbol(String),
-    Add(Box<Expr>, Box<Expr>),
-    // Add more expression types as needed
-}
+// In src/lib.rs
+pub mod parser;
+pub mod ast;
+pub mod evaluator;
